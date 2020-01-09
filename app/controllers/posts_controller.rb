@@ -4,5 +4,14 @@ class PostsController < ApplicationController
 
   def contact
   end
+
+  def senryu
+  end
+
+  def mercari
+  end
+
+  def game
+  end
   
 end

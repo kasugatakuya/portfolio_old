@@ -1,6 +1,7 @@
 .head
   .head_title
-    KASUGA*PORTFOLIO
+    = link_to root_path, class: "icon2" do
+      KASUGA*PORTFOLIO
   .head_manu
     .head_manu_manu1
       PROFLIE
@@ -40,12 +41,16 @@
         .main_proflie_content_text_title
           SKILL
         .main_proflie_content_text_text1
-          HTML/CSS/Ruby/Rails/JavaScript/jQuery/SQL/AWS/Github
+          HTML/CSS/Ruby/Rails/JavaScript/
+          %br
+          jQuery/SQL/AWS/Github
         .main_proflie_content_text_title
           SNS
         .main_proflie_content_text_sns
-          %i.fab.fa-twitter-square
-          %i.fab.fa-github-square
+          = link_to "https://twitter.com/ksksw13", class: "icon" do
+            %i.fab.fa-twitter-square
+          = link_to "https://github.com/kasugatakuya", class: "icon" do
+            %i.fab.fa-github-square
 
 
   .works
@@ -55,9 +60,9 @@
       .works_title_sub
         〜制作実績〜
     .works_content
-      = image_tag "image2.jpg", size: "500x320", alt: "川柳縛り", class: "image1"
-      = image_tag "image3.jpg", size: "500x320", alt: "川柳縛り", class: "image1"
-      = image_tag "image4.jpg", size: "500x320", alt: "川柳縛り", class: "image1"
+      = link_to image_tag(src="image2.jpg", size: "500x320", alt: "川柳縛り", class: "image1"), senryu_path
+      = link_to image_tag(src="image3.jpg", size: "500x320", alt: "メルカリ", class: "image1"), mercari_path 
+      = link_to image_tag(src="image4.jpg", size: "500x320", alt: "ゲーム", class: "image1"), game_path
 
   .contact
     .contact_title
@@ -65,6 +70,10 @@
       CONTACT
       .contact_title_sub
         〜お問い合わせ〜
+        %br
+        ご依頼やご相談などございましたら
+        %br
+        下記のフォームかTwitterのDMからお問い合わせください
     .contact_form
       %form{action: "https://formspree.io/rxsgw123@yahoo.co.jp",method: "POST"}
         .form-group
@@ -81,7 +90,13 @@
           %textarea#message.form-control{cols: "40", name: "message", rows: "10",required: ""}
         %button.btn.btn-primary{type: "submit"} 送信する
 
+  .top
+    %i.fas.fa-angle-double-up
+
+
 .foot
   .foot_content
-    %i.fab.fa-twitter-square
-    %i.fab.fa-github-square
+    = link_to "https://twitter.com/ksksw13", class: "icon" do
+      %i.fab.fa-twitter-square
+    = link_to "https://github.com/kasugatakuya", class: "icon" do
+      %i.fab.fa-github-square

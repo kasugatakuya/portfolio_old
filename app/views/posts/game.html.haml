@@ -1,0 +1,36 @@
+.head
+  .head_title
+    = link_to root_path, class: "icon2" do
+      KASUGA*PORTFOLIO
+
+.main   
+  .main_title
+    プログラミング道場
+  .main_proflie
+    = link_to image_tag(src="image4.jpg", alt: "プログラミング道場", class: "image2"), "http://18.176.29.121/"
+    .main_proflie_title
+      使用SKILL
+      .main_proflie_title_sub
+        HTML/CSS/Ruby/Rails/JavaScript/AWS/Github
+    .main_proflie_title
+      説明
+      .main_proflie_title_sub
+        プログラミングを上達させるために作ったサイト
+        %br
+        プログラミングクイズとメソッドのタイピングゲームが楽しめる。
+        %br
+        %br
+        = link_to "http://18.176.29.121/", class: "icon3" do
+          「プログラミング道場」はこちら
+        %br
+        = link_to "https://github.com/kasugatakuya/webgame", class: "icon3" do
+          README.mdはこちら
+
+
+
+.foot
+  .foot_content
+    = link_to "https://twitter.com/ksksw13", class: "icon" do
+      %i.fab.fa-twitter-square
+    = link_to "https://github.com/kasugatakuya", class: "icon" do
+      %i.fab.fa-github-square

@@ -1,0 +1,41 @@
+.head
+  .head_title
+    = link_to root_path, class: "icon2" do
+      KASUGA*PORTFOLIO
+
+.main   
+  .main_title
+    川柳縛り
+  .main_proflie
+    = link_to image_tag(src="image2.jpg", alt: "川柳縛り", class: "image2"), "http://18.178.3.27/"
+    .main_proflie_title
+      使用SKILL
+      .main_proflie_title_sub
+        HTML/CSS/Ruby/Rails/JavaScript/jQuery/SQL/AWS/Github
+    .main_proflie_title
+      説明
+      .main_proflie_title_sub
+        川柳投稿サイト。
+        %br
+        川柳を投稿できて、いいね順にランキング表示される。
+        %br
+        チャット機能もあり、5・7・5縛りでチャットできる。
+        %br
+        川柳クイズも楽しめる。
+        %br
+        %br
+        = link_to "http://18.178.3.27/", class: "icon3" do
+          「川柳縛り」はこちら
+        %br
+        = link_to "https://github.com/kasugatakuya/senryublog", class: "icon3" do
+          README.mdはこちら
+
+    
+
+
+.foot
+  .foot_content
+    = link_to "https://twitter.com/ksksw13", class: "icon" do
+      %i.fab.fa-twitter-square
+    = link_to "https://github.com/kasugatakuya", class: "icon" do
+      %i.fab.fa-github-square

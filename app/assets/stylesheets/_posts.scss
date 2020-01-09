@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 1;
   &_title {
     color: white;
     font-size: 20px;
@@ -23,14 +24,17 @@
       border-right: 1px solid white;
       border-left: 1px solid white;
       padding: 0 10px;
+      cursor: pointer;
     }
     &_manu2 {
       border-right: 1px solid white;
       padding: 0 10px;
+      cursor: pointer;
     }
     &_manu3 {
       border-right: 1px solid white;
       padding: 0 10px;
+      cursor: pointer;
     }
   }
 }
@@ -67,7 +71,7 @@
         }
         &_title {
           font-size: 35px;
-          margin-top: 30px;
+          margin-top: 48px;
         }
         &_sns {
           font-size: 70px;
@@ -86,6 +90,7 @@
     }
   }
   .contact {
+    margin-bottom: 100px;
     &_title {
       font-size: 45px;
       padding: 30px 0;
@@ -94,7 +99,31 @@
         font-size: 20px;
       }
     }
+    #name.form-control {
+      width: 340px;
+      height: 40px;
+    }
+    #email.form-control {
+      width: 340px;
+      height: 40px;
+    }
+    .form-group{
+      padding-top: 20px;
+    }
+    .btn.btn-primary {
+      height: 40px;
+      width: 150px;
+      font-size: 15px;
+      border-radius: 4px;
+      background-color: silver;
+      cursor: pointer;
+    }
   }
+}
+
+.top {
+  font-size: 40px;
+  cursor: pointer;
 }
 
 .foot {
@@ -106,3 +135,23 @@
     line-height: 200px;
   }
 }
+
+.icon {
+  text-decoration: none;
+  color: black;
+}
+
+.icon2 {
+  text-decoration: none;
+  color: white;
+}
+
+.icon3 {
+  text-decoration: none;
+  color: skyblue;
+}
+
+.image2 {
+  height: 900px;
+  width: 100vw;
+} 
