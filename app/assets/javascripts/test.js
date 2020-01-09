@@ -4,13 +4,13 @@ $(function(){
     $('html,body').animate({scrollTop:0});
   }
   function scrolltoUser() {
-    $('html,body').animate({scrollTop:200});
+    $('html,body').animate({scrollTop:220});
   }
   function scrolltoWorks() {
-    $('html,body').animate({scrollTop:1320});
+    $('html,body').animate({scrollTop:1410});
   }
   function scrooltoContact() {
-    $('html,body').animate({scrollTop:2200});
+    $('html,body').animate({scrollTop:2280});
   }
   $(".top").click(function(){
     scrolltoTop()
