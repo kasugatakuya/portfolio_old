@@ -66,6 +66,20 @@
       .contact_title_sub
         〜お問い合わせ〜
     .contact_form
+      %form{action: "https://formspree.io/k.0807roadster@gmail.com",method: "POST"}
+      .form-group
+        %label{for: "name"} name
+      %br
+        %input#name.form-control{name: "name",type: "text", required: ""}/
+      %br
+        %label{for: "email"} email
+      %br
+        %input#email.form-control{name: "email",type: "email",required: ""}/
+      .form-group
+        %label{for: "message"} message
+      %br
+        %textarea#message.form-control{cols: "40", name: "message", rows: "10",required: ""}
+      %button.btn.btn-primary{type: "submit"} 送信する
 
 .foot
   .foot_content
