@@ -1,3 +1,73 @@
-.title
-  春日拓也のポートフォリオ
-  
+.head
+  .head_title
+    KASUGA*PORTFOLIO
+  .head_manu
+    .head_manu_manu1
+      PROFLIE
+    .head_manu_manu2
+      WORKS
+    .head_manu_manu3
+      CONTACT
+
+.main   
+  .main_title
+    KASUGA*PORTFOLIO
+  .main_proflie
+    .main_proflie_title
+      %i.fas.fa-male
+      PROFILE
+      .main_proflie_title_sub
+        〜プロフィール〜
+    .main_proflie_content
+      .main_proflie_content_image
+        = image_tag "image1.jpg", size: "450x320", alt: "顔写真1", class: "image1"
+      .main_proflie_content_text
+        .main_proflie_content_text_name
+          春日 拓也
+          %br
+          （かすが たくや）
+        .main_proflie_content_text_text1
+          1992年4月3日生まれ（27歳)
+          %br
+          薬剤師として調剤薬局で２年半勤めた後
+          %br
+          新しいサービスを作りたいと思い
+          %br
+          エンジニアになる事を決意する。
+          %br
+          TECH::EXPERT64期卒業生
+          %br
+        .main_proflie_content_text_title
+          SKILL
+        .main_proflie_content_text_text1
+          HTML/CSS/Ruby/Rails/JavaScript/jQuery/SQL/AWS/Github
+        .main_proflie_content_text_title
+          SNS
+        .main_proflie_content_text_sns
+          %i.fab.fa-twitter-square
+          %i.fab.fa-github-square
+
+
+  .works
+    .works_title
+      %i.fas.fa-pen
+      WORKS
+      .works_title_sub
+        〜制作実績〜
+    .works_content
+      = image_tag "image2.jpg", size: "500x320", alt: "川柳縛り", class: "image1"
+      = image_tag "image3.jpg", size: "500x320", alt: "川柳縛り", class: "image1"
+      = image_tag "image4.jpg", size: "500x320", alt: "川柳縛り", class: "image1"
+
+  .contact
+    .contact_title
+      %i.fas.fa-envelope
+      CONTACT
+      .contact_title_sub
+        〜お問い合わせ〜
+    .contact_form
+
+.foot
+  .foot_content
+    %i.fab.fa-twitter-square
+    %i.fab.fa-github-square
