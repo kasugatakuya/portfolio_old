@@ -119,6 +119,14 @@
       cursor: pointer;
     }
   }
+  .root-back {
+    background-color: silver;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    font-size: 15px;
+  }
 }
 
 .top {
@@ -150,6 +158,12 @@
   text-decoration: none;
   color: skyblue;
 }
+
+.icon4 {
+  text-decoration: none;
+  color: black;
+}
+
 
 .image2 {
   height: 900px;
