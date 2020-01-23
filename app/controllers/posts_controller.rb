@@ -13,5 +13,8 @@ class PostsController < ApplicationController
 
   def game
   end
+
+  def tetris
+  end
   
 end
