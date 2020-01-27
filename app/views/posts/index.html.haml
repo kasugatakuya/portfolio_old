@@ -82,20 +82,23 @@
         %br
         下記のフォームかTwitterのDMからお問い合わせください
     .contact_form
-      %form{action: "https://formspree.io/rxsgw123@yahoo.co.jp",method: "POST"}
+      %form{action: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSctTB3nEsqAHqGPD6kWTd-3l9WczQHit3Y0jPb91zM0oFCvmw/formResponse",method: "POST"}
         .form-group
-          %label{for: "name"} name
+          %label{for: "name"} お名前
         %br
-          %input#name.form-control{name: "name",type: "text", required: ""}/
+          %input.quantumWizTextinputPaperinputInput.exportInput{"aria-describedby" => "i.desc.2123909578 i.err.2123909578", "aria-label" => "名前", :autocomplete => "off", "data-initial-dir" => "auto", "data-initial-value" => "", :dir => "auto", :jsname => "YPqjbf", :name => "entry.1535126923", :required => "", :tabindex => "0", :type => "text", :value => ""}/
         %br
-          %label{for: "email"} email
+          %label{for: "email"} メールアドレス
         %br
-          %input#email.form-control{name: "email",type: "email",required: ""}/
+          %input.quantumWizTextinputPaperinputInput.exportInput{"aria-label" => "メールアドレス", :autocomplete => "email", "data-initial-dir" => "auto", "data-initial-value" => "", :dir => "auto", :jsname => "YPqjbf", :name => "emailAddress", :required => "", :tabindex => "0", :type => "email", :value => ""}/
+
         .form-group
-          %label{for: "message"} message
+          %label{for: "message"} メッセージ
         %br
-          %textarea#message.form-control{cols: "40", name: "message", rows: "10",required: ""}
+          %textarea.quantumWizTextinputPapertextareaInput.exportTextarea{"aria-describedby" => "i.desc.59398304 i.err.59398304", "aria-label" => "メッセージ", "data-initial-dir" => "auto", "data-initial-value" => "", "data-rows" => "1", :dir => "auto", :jsaction => "input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;", :jscontroller => "gZjhIf", :jsname => "YPqjbf", :name => "entry.1734148990", :required => "", :style => "height: 200px;", :tabindex => "0"}
+
         %button.btn.btn-primary{type: "submit"} 送信する
+
 
   .top
     %i.fas.fa-angle-double-up
