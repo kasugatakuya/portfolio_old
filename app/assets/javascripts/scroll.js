@@ -10,7 +10,7 @@ $(function(){
     $('html,body').animate({scrollTop:1410});
   }
   function scrooltoContact() {
-    $('html,body').animate({scrollTop:2280});
+    $('html,body').animate({scrollTop:2580});
   }
   $(".top").click(function(){
     scrolltoTop()
