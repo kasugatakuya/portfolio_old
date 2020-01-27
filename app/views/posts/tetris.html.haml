@@ -3,6 +3,39 @@
     = link_to root_path, class: "icon2" do
       KASUGA*PORTFOLIO
 
+.main   
+  .main_title
+    テトリス
+  .main_proflie
+    = link_to image_tag(src="image8.jpg", alt: "テトリス", class: "image8", size: "200x420"), "https://my-tetris-game.firebaseapp.com/"
+    .main_proflie_title
+      使用SKILL
+      .main_proflie_title_sub
+        HTML/CSS/JavaScript/firebase
+    .main_proflie_title
+      説明
+      .main_proflie_title_sub
+        テトリス(個人制作)
+        %br
+        ・JavaScriptのcanvasを使って実装
+        %br
+        ・スタンダードなテトリスが楽しめる。
+    .main_proflie_title
+      追加したい機能
+      .main_proflie_title_sub
+        ・次に来るブロックの表示
+        %br
+        ・スコア表示
+        %br
+        ・スコアに応じて落下スピード調整
+        %br
+        ・ホールド機能
+        %br
+        ・クリックでスタート機能
+        %br
+        = link_to "https://my-tetris-game.firebaseapp.com/", class: "icon3" do
+          「テトリス」はこちら
+
 
 .foot
   .foot_content

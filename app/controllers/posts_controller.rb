@@ -14,6 +14,9 @@ class PostsController < ApplicationController
   def game
   end
 
+  def isara
+  end
+
   def tetris
   end
   

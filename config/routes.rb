@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'senryu' => 'posts#senryu'
   get 'mercari' => 'posts#mercari'
   get 'game' => 'posts#game'
+  get 'isara' => 'posts#isara'
   get 'tetris' => 'posts#tetris'
 
 end

@@ -60,6 +60,7 @@
     &_content {
       .image1 {
         border-radius: 300px;
+        border: 1px solid silver;
       }
       &_text {
         &_name {
@@ -169,3 +170,9 @@
   height: 900px;
   width: 100vw;
 } 
+
+.image6 {
+  max-width: 600px;
+  height: 6000px;
+  width: 100vw;
+}

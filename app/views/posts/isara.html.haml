@@ -1,0 +1,40 @@
+.head
+  .head_title
+    = link_to root_path, class: "icon2" do
+      KASUGA*PORTFOLIO
+
+.main   
+  .main_title
+    isaraの模写
+  .main_proflie
+    = image_tag(src="image6.jpg", alt: "isara-copy", class: "image6")
+    .main_proflie_title
+      使用SKILL
+      .main_proflie_title_sub
+        HTML/CSS/JavaScript/jQuery/firebase
+    .main_proflie_title
+      説明
+      .main_proflie_title_sub
+        isaraの模写(個人制作)
+        %br
+        ・レスポンシブ対応
+        %br
+        ・ページ内遷移機能(jQuery)
+        %br
+        ・アコーディオンメニュー(jQuery)
+        %br
+        ・お問い合わせフォーム設置(※実際には送れません)
+        %br
+        = link_to "https://isara-copy.firebaseapp.com/#title", class: "icon3" do
+          isaraの模写はこちら
+        %br
+        = link_to "https://isara.life/", class: "icon3" do
+          参考元サイト(isara)はこちら
+
+
+.foot
+  .foot_content
+    = link_to "https://twitter.com/ksksw13", class: "icon" do
+      %i.fab.fa-twitter-square
+    = link_to "https://github.com/kasugatakuya", class: "icon" do
+      %i.fab.fa-github-square
