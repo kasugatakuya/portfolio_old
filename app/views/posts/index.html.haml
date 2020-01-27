@@ -86,16 +86,16 @@
         .form-group
           %label{for: "name"} お名前
         %br
-          %input.quantumWizTextinputPaperinputInput.exportInput{"aria-describedby" => "i.desc.2123909578 i.err.2123909578", "aria-label" => "名前", :autocomplete => "off", "data-initial-dir" => "auto", "data-initial-value" => "", :dir => "auto", :jsname => "YPqjbf", :name => "entry.1535126923", :required => "", :tabindex => "0", :type => "text", :value => ""}/
+          %input.input{:name => "entry.1535126923", :required => "required", :type => "text"}/
         %br
           %label{for: "email"} メールアドレス
         %br
-          %input.quantumWizTextinputPaperinputInput.exportInput{"aria-label" => "メールアドレス", :autocomplete => "email", "data-initial-dir" => "auto", "data-initial-value" => "", :dir => "auto", :jsname => "YPqjbf", :name => "emailAddress", :required => "", :tabindex => "0", :type => "email", :value => ""}/
+          %input.input{:name => "emailAddress", :required => "required", :type => "text"}/
 
         .form-group
           %label{for: "message"} メッセージ
         %br
-          %textarea.quantumWizTextinputPapertextareaInput.exportTextarea{"aria-describedby" => "i.desc.59398304 i.err.59398304", "aria-label" => "メッセージ", "data-initial-dir" => "auto", "data-initial-value" => "", "data-rows" => "1", :dir => "auto", :jsaction => "input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;", :jscontroller => "gZjhIf", :jsname => "YPqjbf", :name => "entry.1734148990", :required => "", :style => "height: 200px;", :tabindex => "0"}
+          %textarea.textarea{:name => "entry.1734148990", :required => "", :style => "height: 200px;", :tabindex => "0"}
 
         %button.btn.btn-primary{type: "submit"} 送信する
 
