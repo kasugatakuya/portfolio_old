@@ -4,8 +4,10 @@
       KASUGA*PORTFOLIO
 
 .main   
-  .main_title
-    isaraの模写
+  #particles-js
+    .main-box
+      .main_title
+        　　　isaraの模写
   .main_proflie
     = image_tag(src="image6.jpg", alt: "isara-copy", class: "image6")
     .main_proflie_title
@@ -30,11 +32,9 @@
         %br
         = link_to "https://isara.life/", class: "icon3" do
           参考元サイト(isara)はこちら
+  %button.root-back
+    = link_to root_path, class: "icon4" do
+      トップ画面に戻る
 
 
-.foot
-  .foot_content
-    = link_to "https://twitter.com/ksksw13", class: "icon" do
-      %i.fab.fa-twitter-square
-    = link_to "https://github.com/kasugatakuya", class: "icon" do
-      %i.fab.fa-github-square
+= render "foot"

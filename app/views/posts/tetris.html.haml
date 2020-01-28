@@ -4,8 +4,10 @@
       KASUGA*PORTFOLIO
 
 .main   
-  .main_title
-    テトリス
+  #particles-js
+    .main-box
+      .main_title
+        　　　テトリス
   .main_proflie
     = link_to image_tag(src="image8.jpg", alt: "テトリス", class: "image8", size: "200x420"), "https://my-tetris-game.firebaseapp.com/"
     .main_proflie_title
@@ -35,11 +37,9 @@
         %br
         = link_to "https://my-tetris-game.firebaseapp.com/", class: "icon3" do
           「テトリス」はこちら
+  %button.root-back
+    = link_to root_path, class: "icon4" do
+      トップ画面に戻る
 
 
-.foot
-  .foot_content
-    = link_to "https://twitter.com/ksksw13", class: "icon" do
-      %i.fab.fa-twitter-square
-    = link_to "https://github.com/kasugatakuya", class: "icon" do
-      %i.fab.fa-github-square
+= render "foot"
