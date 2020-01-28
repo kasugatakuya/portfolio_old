@@ -4,8 +4,10 @@
       KASUGA*PORTFOLIO
 
 .main   
-  .main_title
-    Fmarket
+  #particles-js
+    .main-box
+      .main_title
+        　　　 Fmarket
   .main_proflie
     = link_to image_tag(src="image3.jpg", alt: "川柳縛り", class: "image2"), "http://3.113.185.115/"
     .main_proflie_title
@@ -32,9 +34,4 @@
     = link_to root_path, class: "icon4" do
       トップ画面に戻る
 
-.foot
-  .foot_content
-    = link_to "https://twitter.com/ksksw13", class: "icon" do
-      %i.fab.fa-twitter-square
-    = link_to "https://github.com/kasugatakuya", class: "icon" do
-      %i.fab.fa-github-square
+= render "foot"

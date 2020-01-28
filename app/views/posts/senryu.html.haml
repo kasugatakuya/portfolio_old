@@ -4,8 +4,10 @@
       KASUGA*PORTFOLIO
 
 .main   
-  .main_title
-    川柳縛り
+  #particles-js
+    .main-box
+      .main_title
+        　　　川柳縛り
   .main_proflie
     = link_to image_tag(src="image2.jpg", alt: "川柳縛り", class: "image2"), "http://18.178.3.27/"
     .main_proflie_title
@@ -36,9 +38,4 @@
     
 
 
-.foot
-  .foot_content
-    = link_to "https://twitter.com/ksksw13", class: "icon" do
-      %i.fab.fa-twitter-square
-    = link_to "https://github.com/kasugatakuya", class: "icon" do
-      %i.fab.fa-github-square
+= render "foot"
