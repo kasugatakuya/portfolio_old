@@ -25,3 +25,32 @@ $(function(){
     scrooltoContact()
   })
 });
+
+// hoverメソッド
+$(function() {
+  console.log('22')
+  $('.icon').hover(
+    function() {
+      $(this).css('font-size','72px');
+    },
+    function() {
+      $(this).css('font-size','70px');
+    }
+  );
+  $('.btn.btn-primary').hover(
+    function() {
+      $(this).css('font-size','18px');
+    },
+    function() {
+      $(this).css('font-size','15px');
+    }
+  );
+  $('.top').hover(
+    function() {
+      $(this).css('color','red');
+    },
+    function() {
+      $(this).css('color','black');
+    }
+  );
+});
