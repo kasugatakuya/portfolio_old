@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700);
+
+
 .head {
   height: 50px;
   width: 100%;
@@ -54,7 +58,7 @@
       .main_title {
         font-size: 45px;
         position: absolute;
-        top: 57px;
+        top: 42px;
       }
     }
   }
@@ -121,12 +125,29 @@
       padding-top: 20px;
     }
     .btn.btn-primary {
-      height: 40px;
-      width: 150px;
-      font-size: 15px;
-      border-radius: 4px;
-      background-color: silver;
+      font-size:15px;
+      font-family: 'PT Sans Narrow', sans-serif;
+      border: none;
       cursor: pointer;
+      padding: 10px 40px;
+      margin-top: 10px;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      font-weight: bold;
+      outline: 0;
+      position: relative;
+      border-radius: 3px;
+      -webkit-animation:  anim 2s ease-in infinite;
+      animation:  anim 2s ease-in infinite;
+      transition: all .3s;
+      background: #3498DB;
+      color: #fff!important;
+      overflow: hidden;
+      text-decoration:none;
+    }
+    .btn.btn-primary:active  {
+      background: #4786b5;
     }
   }
   .root-back {
@@ -152,7 +173,7 @@
   .foot-box {
     position: relative;
     display: inline-block;
-    width: 140px;
+    width: 144px;
     .foot_content {
       font-size: 70px;
       position: absolute;
@@ -167,6 +188,11 @@
 
 
 .icon {
+  text-decoration: none;
+  color: black;
+}
+
+.footicon {
   text-decoration: none;
   color: black;
 }
@@ -198,3 +224,88 @@
   width: 100vw;
 }
 
+// 送信ボタンの動き
+@-webkit-keyframes anim {
+  5% {
+  -webkit-transform: scale(1.1, .9);
+  transform: scale(1.1, .9);
+}
+10% {
+  -webkit-transform: scale(.9, 1.1) translateY(-.5rem);
+  transform: scale(.9, 1.1) translateY(-.5rem);
+}
+15% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+}
+@keyframes anim {
+  5% {
+  -webkit-transform: scale(1.1, .9);
+  transform: scale(1.1, .9);
+}
+10% {
+  -webkit-transform: scale(.9, 1.1) translateY(-.5rem);
+  transform: scale(.9, 1.1) translateY(-.5rem);
+}
+15% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+}
+
+@media only screen and (max-width:640px) {  
+  .btn.btn-primary {
+  padding: 25px 50px;
+  font-size: 16px;
+}
+}
+
+// トップタイトルのKASUGA*PORTFOLIO
+.container {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  cursor: default;
+}
+
+li {
+  display: inline-block;
+  line-height: 40px;
+  perspective: 1000px;  
+}
+
+li span {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+  background: silver;
+	transition: transform 0.3s;
+	transform-origin: 50% 0;
+	transform-style: preserve-3d;
+}
+
+li span::before {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  background: silver;
+  color: white;
+	content: attr(data-hover);
+	transition: background 0.3s;
+	transform: rotateX(-90deg);
+	transform-origin: 50% 0;
+}
+
+li:hover span,
+li:focus span {transform: rotateX(90deg) translateY(-22px);}
+
+li:hover span::before,
+li:focus span::before {background: silver;}
