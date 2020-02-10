@@ -309,3 +309,14 @@ li:focus span {transform: rotateX(90deg) translateY(-22px);}
 
 li:hover span::before,
 li:focus span::before {background: silver;}
+
+// googleform-ajax後
+#success {
+  display: none;
+  font-size: 20px;
+  font-weight:bold; 
+}
+
+#error {
+  display: none;
+}

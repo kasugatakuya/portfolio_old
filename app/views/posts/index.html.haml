@@ -119,23 +119,32 @@
         ご依頼やご相談などございましたら
         %br
         下記のフォームかTwitterのDMからお問い合わせください
-    .contact_form
-      %form{action: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSctTB3nEsqAHqGPD6kWTd-3l9WczQHit3Y0jPb91zM0oFCvmw/formResponse",method: "POST"}
+    #googleform
+      -# %form{action: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSctTB3nEsqAHqGPD6kWTd-3l9WczQHit3Y0jPb91zM0oFCvmw/formResponse",method: "POST"}
+      %form
         .form-group
           %label{for: "name"} お名前
         %br
-          %input.input{:name => "entry.1535126923", :required => "required", :type => "text"}/
+          %input#name.input{:name => "entry.1535126923", :required => "required", :type => "text"}/
         %br
           %label{for: "email"} メールアドレス
         %br
-          %input.input{:name => "emailAddress", :required => "required", :type => "text"}/
+          %input#email.input{:name => "emailAddress", :required => "required", :type => "text"}/
 
         .form-group
           %label{for: "message"} メッセージ
         %br
-          %textarea.textarea{:name => "entry.1734148990", :required => "", :style => "height: 200px;", :tabindex => "0"}
+          %textarea#textarea.textarea{:name => "entry.1734148990", :required => "", :style => "height: 200px;", :tabindex => "0"}
 
-        %button.btn.btn-primary{type: "submit"} 送信する
+        -# %button.btn.btn-primary{type: "submit"} 送信する
+        %input#submitBtn.btn.btn-primary{:type => "submit", :value => "送信"}/
+
+      #success
+        %h2 送信完了しました。ありがとうございました。
+      / 送信が失敗したときに表示するテキスト
+      #error
+        %h2 送信に失敗しました。ページを更新して再度送信してください。
+
 
 
   .top
