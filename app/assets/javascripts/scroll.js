@@ -4,13 +4,13 @@ $(function(){
     $('html,body').animate({scrollTop:0});
   }
   function scrolltoUser() {
-    $('html,body').animate({scrollTop:254});
+    $('html,body').animate({scrollTop:260});
   }
   function scrolltoWorks() {
-    $('html,body').animate({scrollTop:1440});
+    $('html,body').animate({scrollTop:1510});
   }
   function scrooltoContact() {
-    $('html,body').animate({scrollTop:2635});
+    $('html,body').animate({scrollTop:2750});
   }
   $(".top").click(function(){
     scrolltoTop()
@@ -29,14 +29,6 @@ $(function(){
 // hoverメソッド
 $(function() {
   console.log('22')
-  $('.icon').hover(
-    function() {
-      $(this).css('font-size','72px');
-    },
-    function() {
-      $(this).css('font-size','70px');
-    }
-  );
   $('.btn.btn-primary').hover(
     function() {
       $(this).css('font-size','18px');
