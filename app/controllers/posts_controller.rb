@@ -20,4 +20,7 @@ class PostsController < ApplicationController
   def tetris
   end
   
+  def stork
+  end
+  
 end

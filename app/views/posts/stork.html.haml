@@ -1,0 +1,44 @@
+.head
+  .head_title
+    = link_to root_path, class: "icon2" do
+      KASUGA*PORTFOLIO
+
+.main   
+  #particles-js
+    .main-box
+      .main_title
+        　　STORKの模写
+  .main_proflie
+    = link_to image_tag(src="stork-page.jpg", alt: "stork", size: "700x2000"), "https://stork-copy.firebaseapp.com/#"
+    .main_proflie_title
+      使用SKILL
+      .main_proflie_title_sub
+        HTML/CSS/JavaScript/jQuery/firebase
+    .main_proflie_title
+      説明
+      .main_proflie_title_sub
+        WordPressのテーマであるSTORKの模写コーディング(個人制作)
+        %br
+        ・レスポンシブ対応
+        %br
+        ・ページ内遷移機能(jQuery)
+        %br
+        ・ドロップダウンメニュー(jQuery)
+        %br
+        ・複数表示スライドショー(jQuery)
+        %br
+        ・ハンバーガーメニュー(jQuery・width766px以下で出現)
+        %br
+        ・検索モーダル(jQuery)
+        %br
+        = link_to "https://stork-copy.firebaseapp.com/#", class: "icon3" do
+          「STORKの模写」はこちら
+        %br
+        = link_to "https://demo-stork.open-cage.com/", class: "icon3" do
+          参考元サイト(STORK)はこちら
+  %button.root-back
+    = link_to root_path, class: "icon4" do
+      トップ画面に戻る
+
+
+= render "foot"

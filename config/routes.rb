@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get 'game' => 'posts#game'
   get 'isara' => 'posts#isara'
   get 'tetris' => 'posts#tetris'
+  get 'stork' => 'posts#stork'
 
 end
